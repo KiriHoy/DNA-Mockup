@@ -1563,9 +1563,13 @@ section .col-md-6 + .col-md-6 { margin-top: 16px; margin-top: 1rem; }
 @media (min-width: 992px) { .au-header { padding-bottom: 0; }
   .au-header [class^="col-md"] + [class^="col-md"] { margin-top: 0; } }
 
-.dna-search-input { margin-bottom: 16px; margin-bottom: 1rem; width: 75%; }
+.dna-search-input .au-text-input { margin-bottom: 1 unit; width: 75%; height: 4rem; }
 
-@media (min-width: 338px) { .dna-search-input { margin-bottom: 0; width: 62%; } }
+@media (min-width: 338px) { .dna-search-input .au-text-input { margin-bottom: 0; width: 62%; } }
+
+.dna-search-input .au-btn { height: 4rem; }
+
+.dna-search-input au-body + p { margin: 0; margin-bottom: 0; }
 
 .label--large { margin-bottom: 24px; margin-bottom: 1.5rem; }
 
