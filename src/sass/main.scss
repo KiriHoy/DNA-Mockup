@@ -5,7 +5,7 @@ $AU-colordark-foreground-focus: #e48ffc;
 $AU-colordark-background: #3c4858;
 
 // Light theme overrides
-$AU-color-foreground-action: #3c4858;
+$AU-color-foreground-action: #236ba5;
 $AU-color-foreground-focus: #e48ffc;
 //Main nav, set project specific breakpoint
 $AU-main-nav-breakpoint: sm;
@@ -136,13 +136,15 @@ section {
   }
 }
 
+.au-text-input--large {
+  @include AU-space(height, 4unit);
+  @include AU-fontgrid( md, default );
+}
 
 .dna-search-wrapper {
-  input {
-    @include AU-space(height, 4unit);
-    @include AU-space(width, 65%);
+  .au-text-input--large {
     @include AU-space(margin-right, 0.5unit);
-    @include AU-fontgrid( md, default );
+    @include AU-space(width, 65%);
 
     @media (max-width: 834px) {
       @include AU-space(margin-bottom, 1unit);
@@ -150,7 +152,7 @@ section {
     }
   }
 
-  .dna-search__button {
+  .au-button--large {
     @include AU-space(height, 4unit);
   }
 
